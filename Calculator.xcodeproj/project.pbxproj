@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E61ED871AFA533F004484A2 /* SimpleCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E61ED861AFA533F004484A2 /* SimpleCalculator.m */; };
 		8E7ECC8F1AF7875E00EC14A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ECC8E1AF7875E00EC14A8 /* main.m */; };
 		8E7ECC921AF7875E00EC14A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ECC911AF7875E00EC14A8 /* AppDelegate.m */; };
 		8E7ECC951AF7875E00EC14A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ECC941AF7875E00EC14A8 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		8E7ECC9A1AF7875E00EC14A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7ECC991AF7875E00EC14A8 /* Images.xcassets */; };
 		8E7ECC9D1AF7875E00EC14A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E7ECC9B1AF7875E00EC14A8 /* LaunchScreen.xib */; };
 		8E7ECCA91AF7875E00EC14A8 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ECCA81AF7875E00EC14A8 /* CalculatorTests.m */; };
+		8E7ECCB41AF787C800EC14A8 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ECCB31AF787C800EC14A8 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E61ED851AFA533F004484A2 /* SimpleCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCalculator.h; sourceTree = "<group>"; };
+		8E61ED861AFA533F004484A2 /* SimpleCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCalculator.m; sourceTree = "<group>"; };
 		8E7ECC891AF7875E00EC14A8 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7ECC8D1AF7875E00EC14A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E7ECC8E1AF7875E00EC14A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		8E7ECCA21AF7875E00EC14A8 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7ECCA71AF7875E00EC14A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E7ECCA81AF7875E00EC14A8 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		8E7ECCB21AF787C800EC14A8 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calculator.h; path = Model/Calculator.h; sourceTree = "<group>"; };
+		8E7ECCB31AF787C800EC14A8 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Calculator.m; path = Model/Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +87,7 @@
 		8E7ECC8B1AF7875E00EC14A8 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				8E7ECC901AF7875E00EC14A8 /* AppDelegate.h */,
-				8E7ECC911AF7875E00EC14A8 /* AppDelegate.m */,
+				8E7ECCB51AF787E000EC14A8 /* Model */,
 				8E7ECC931AF7875E00EC14A8 /* ViewController.h */,
 				8E7ECC941AF7875E00EC14A8 /* ViewController.m */,
 				8E7ECC961AF7875E00EC14A8 /* Main.storyboard */,
@@ -96,6 +101,8 @@
 		8E7ECC8C1AF7875E00EC14A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E7ECC901AF7875E00EC14A8 /* AppDelegate.h */,
+				8E7ECC911AF7875E00EC14A8 /* AppDelegate.m */,
 				8E7ECC8D1AF7875E00EC14A8 /* Info.plist */,
 				8E7ECC8E1AF7875E00EC14A8 /* main.m */,
 			);
@@ -117,6 +124,17 @@
 				8E7ECCA71AF7875E00EC14A8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E7ECCB51AF787E000EC14A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E7ECCB21AF787C800EC14A8 /* Calculator.h */,
+				8E7ECCB31AF787C800EC14A8 /* Calculator.m */,
+				8E61ED851AFA533F004484A2 /* SimpleCalculator.h */,
+				8E61ED861AFA533F004484A2 /* SimpleCalculator.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7ECC951AF7875E00EC14A8 /* ViewController.m in Sources */,
+				8E7ECCB41AF787C800EC14A8 /* Calculator.m in Sources */,
+				8E61ED871AFA533F004484A2 /* SimpleCalculator.m in Sources */,
 				8E7ECC921AF7875E00EC14A8 /* AppDelegate.m in Sources */,
 				8E7ECC8F1AF7875E00EC14A8 /* main.m in Sources */,
 			);
@@ -416,6 +436,7 @@
 				8E7ECCAE1AF7875E00EC14A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E7ECCAF1AF7875E00EC14A8 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				8E7ECCB11AF7875E00EC14A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

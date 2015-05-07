@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 方舟. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SimpleCalculatorViewController.h"
 #import "SimpleCalculator.h"
 
 
